@@ -11,10 +11,10 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: #EAE7E4;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #131317;
+      font-family: ui-rounded, -apple-system, BlinkMacSystemFont, 'SF Pro Rounded', 'Helvetica Neue', sans-serif;
       font-weight: 500;
-      color: #2b2928;
+      color: #ffffff;
       line-height: 1.6;
     }
 
@@ -29,12 +29,12 @@
       align-items: center;
       gap: 8px;
       font-size: 14px;
-      color: #808080;
+      color: rgba(255, 255, 255, 0.6);
       text-decoration: none;
       margin-bottom: 48px;
       transition: color 0.15s;
     }
-    .back:hover { color: #2b2928; }
+    .back:hover { color: #ffffff; }
     .back svg { width: 16px; height: 16px; }
 
     h1 {
@@ -47,7 +47,7 @@
 
     .updated {
       font-size: 14px;
-      color: #808080;
+      color: rgba(255, 255, 255, 0.6);
       margin-bottom: 48px;
     }
 
@@ -56,13 +56,13 @@
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      color: #2b2928;
+      color: #D9C88F;
       margin: 40px 0 12px;
     }
 
     p, li {
       font-size: 16px;
-      color: #555150;
+      color: rgba(255, 255, 255, 0.7);
     }
 
     p { margin-bottom: 16px; }
@@ -70,17 +70,17 @@
     ul { padding-left: 20px; margin-bottom: 16px; }
     li { margin-bottom: 8px; }
 
-    a { color: #2b2928; }
+    a { color: #F2C455; }
 
     .divider {
       height: 1px;
-      background: #bbb9b6;
+      background: rgba(255, 255, 255, 0.08);
       margin: 56px 0 24px;
     }
 
     .footer-credit {
       font-size: 12px;
-      color: #808080;
+      color: rgba(255, 255, 255, 0.5);
     }
   </style>
 </head>
@@ -92,7 +92,7 @@
     </a>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: June 18, 2026</p>
+    <p class="updated">Last updated: July 9, 2026</p>
 
     <p>This Privacy Policy describes how Sunny (“we,” “our,” or “the app”) handles your information. Sunny is a light meter application for iPhone. We built Sunny to respect your privacy: it is designed to work entirely on your device.</p>
 
@@ -104,6 +104,9 @@
 
     <h2>Photo Library</h2>
     <p>If you choose to save a reading or image, it is stored in your device’s photo library or local storage under your control. We do not access your photo library without your action.</p>
+
+    <h2>Location</h2>
+    <p>If you enable the location overlay, Sunny requests access to your location only at the moment you capture a photo, to geotag it and stamp a coarse place name (such as city and state) onto the image. Location is fetched as a one-time reading per capture, is never tracked continuously, and never leaves your device except as metadata embedded in photos you save to your own library. You can disable this at any time in the app’s settings or in iOS Settings.</p>
 
     <h2>Purchases</h2>
     <p>Sunny offers in-app purchases. All transactions are processed by Apple through your App Store account. We do not collect, see, or store your payment information; it is handled entirely by Apple in accordance with <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s Privacy Policy</a>.</p>

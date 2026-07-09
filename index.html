@@ -19,11 +19,13 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    /* Palette mirrors the app: sheet #131317, white foreground,
+       Kodak gold #F2C455 accent, champagne #D9C88F secondary. */
     body {
-      background: #EAE7E4;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #131317;
+      font-family: ui-rounded, -apple-system, BlinkMacSystemFont, 'SF Pro Rounded', 'Helvetica Neue', sans-serif;
       font-weight: 500;
-      color: #2b2928;
+      color: #ffffff;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -45,7 +47,7 @@
       width: 160px;
       height: 160px;
       border-radius: 48px;
-      box-shadow: 0 24px 64px rgba(43, 41, 40, 0.18);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
       display: block;
     }
 
@@ -59,7 +61,7 @@
     h1 {
       font-size: clamp(48px, 9vw, 96px);
       font-weight: 500;
-      color: #2b2928;
+      color: #ffffff;
       line-height: 1;
       letter-spacing: -0.02em;
     }
@@ -67,23 +69,24 @@
     .tagline {
       font-size: clamp(16px, 2.4vw, 20px);
       font-weight: 500;
-      color: #808080;
+      color: rgba(255, 255, 255, 0.65);
       max-width: 28ch;
       line-height: 1.45;
     }
 
     /* ── CTA ── */
+    /* Matches the app's RectangleButton: gold fill, black label, 16px radius. */
     .cta {
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      background: #2b2928;
-      color: #EAE7E4;
+      background: #F2C455;
+      color: #000000;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 500;
       padding: 16px 28px;
-      border-radius: 999px;
+      border-radius: 16px;
       transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.15s;
     }
 
@@ -103,18 +106,18 @@
     .footer a {
       font-size: 14px;
       font-weight: 500;
-      color: #808080;
+      color: rgba(255, 255, 255, 0.6);
       text-decoration: none;
       transition: color 0.15s;
     }
 
-    .footer a:hover { color: #2b2928; }
+    .footer a:hover { color: #ffffff; }
 
     .footer .dot {
       width: 3px;
       height: 3px;
       border-radius: 50%;
-      background: #bbb9b6;
+      background: rgba(255, 255, 255, 0.25);
       flex-shrink: 0;
     }
 
