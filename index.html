@@ -19,13 +19,13 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* Palette mirrors the app: sheet #131317, white foreground,
-       champagne #D9C88F accent (the app's secondaryAccent). */
+    /* Palette mirrors the app after the v2.0.0 Solar Flare rebrand:
+       background #080808, label #F4F4F2 foreground, solar #FFD600 accent. */
     body {
-      background: #131317;
+      background: #080808;
       font-family: ui-rounded, -apple-system, BlinkMacSystemFont, 'SF Pro Rounded', 'Helvetica Neue', sans-serif;
       font-weight: 500;
-      color: #ffffff;
+      color: #F4F4F2;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -61,7 +61,7 @@
     h1 {
       font-size: clamp(48px, 9vw, 96px);
       font-weight: 500;
-      color: #ffffff;
+      color: #F4F4F2;
       line-height: 1;
       letter-spacing: -0.02em;
     }
@@ -75,18 +75,18 @@
     }
 
     /* ── CTA ── */
-    /* Matches the app's paywall CTA: champagne fill, black label, 16px radius. */
+    /* Matches the app's accent button: solar fill, background-dark label, 20px radius. */
     .cta {
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      background: #D9C88F;
-      color: #000000;
+      background: #FFD600;
+      color: #080808;
       text-decoration: none;
       font-size: 16px;
       font-weight: 500;
       padding: 16px 28px;
-      border-radius: 16px;
+      border-radius: 20px;
       transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.15s;
     }
 
